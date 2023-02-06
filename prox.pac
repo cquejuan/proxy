@@ -29,7 +29,8 @@ const bypassProxyHosts = [
     ".comptia.org",
     ".usaa.com",
     ".wgu.edu",
-    ".github.com"
+    "github.com",
+    "mfdonut.com"
 ];
 //Add TLDs to bypass proxy
 const bypassProxyTLDs = [
