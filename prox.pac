@@ -22,15 +22,18 @@ Refer to:
 const proxy = 'PROXY proxy2-1814417d1bc33df81c12bc1f70b3bde3.menlosecurity.com:443; PROXY proxy3-1814417d1bc33df81c12bc1f70b3bde3.menlosecurity.com:443; DIRECT';
 //Add hosts to bypass proxy.
 const bypassProxyHosts = [
-    ".menlosecurity.com",
-    ".microsoft.com",
-    ".apple.com",
-    ".spotify.com",
-    ".comptia.org",
-    ".usaa.com",
-    ".wgu.edu",
+    "menlosecurity.com",
+    "microsoft.com",
+    "apple.com",
+    "citi.com",
+    "comptia.org",
+    "cloudflare.com",
     "github.com",
-    "mfdonut.com"
+    "google.com",
+    "mfdonut.com",
+    "spotify.com",
+    "usaa.com",
+    "wgu.edu",
 ];
 //Add TLDs to bypass proxy
 const bypassProxyTLDs = [
