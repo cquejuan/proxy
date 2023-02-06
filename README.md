@@ -1,3 +1,1 @@
-# PACAF Prox
-
-Slow as hell but allows YouTube
+# USAF PACAF Prox
