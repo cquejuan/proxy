@@ -31,6 +31,7 @@ const bypassProxyHosts = [
     "github.com",
     "google.com",
     "mfdonut.com",
+    "microsoft.com",
     "spotify.com",
     "usaa.com",
     "wgu.edu",
