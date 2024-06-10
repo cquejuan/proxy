@@ -31,19 +31,18 @@ const bypassProxyTLDs = [
     "*.gov",
     "*.mil"
 ]
-const d = 'DIRECT';
 function FindProxyForURL(url, host){
     url = url.toLowerCase();
     host = host.toLowerCase();
     if(isPlainHostName(host)){
         return "DIRECT";
     }
-    if(shExpMatch(hostIP, "131.39.*"){
-        return "DIRECT";
-    }
-    //if(shExpMatch(host, "*.area52.afnoapps.usaf.mil")){
+    //if(shExpMatch(hostIP, "131.39.*"){
     //    return "DIRECT";
     //}
+    if(shExpMatch(host, "*.area52.afnoapps.usaf.mil")){
+        return "DIRECT";
+    }
     for(i = 0; i < bypassProxyTLDs.length; i++){
         if(shExpMatch(host, bypassProxyTLDs[i])){
             return "DIRECT";
