@@ -28,17 +28,18 @@ const bypassProxyHosts = [
     "citi.com",
     "comptia.org",
     "cloudflare.com",
+    "facebook.com",
     "github.com",
     "github.io",
     "google.com",
     "mfdonut.com",
     "microsoft.com",
-    //"microsoft.us",
-    //"microsoftonline.us",
-    //"office365.us", // excel.dod.online.office365.us
+    "microsoft.us",
+    "microsoftonline.us",
+    "office365.us", // excel.dod.online.office365.us
     "spotify.com",
     "usaa.com",
-    "wgu.edu",
+    "wgu.edu"
 ];
 //Add TLDs to bypass proxy
 const bypassProxyTLDs = [
