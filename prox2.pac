@@ -49,6 +49,9 @@ function FindProxyForURL(url, host){
     if(shExpMatch(hostIP, "131.39.*"){
         return "DIRECT";
     }
+    if(hostIP==0){
+        return proxy;
+    }
     for(i = 0; i < bypassProxyTLDs.length; i++){
         if(shExpMatch(host, bypassProxyTLDs[i])){
             return "DIRECT";
