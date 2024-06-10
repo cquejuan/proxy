@@ -47,7 +47,7 @@ function FindProxyForURL(url, host){
     } else {
         hostIP = dnsResolve(host);
     }    
-    if(shExpMatch(hostIP, "131.39.*"){
+    if(shExpMatch(hostIP, "131.39.*")){
         return "DIRECT";
     }
     if(hostIP === 0){
