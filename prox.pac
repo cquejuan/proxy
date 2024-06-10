@@ -36,22 +36,22 @@ function FindProxyForURL(url, host){
     url = url.toLowerCase();
     host = host.toLowerCase();
     if(isPlainHostName(host)){
-        return d;
+        return "DIRECT";
     }
     if(shExpMatch(hostIP, "131.39.*"){
-        return d;
+        return "DIRECT";
     }
-    if(shExpMatch(host, "*.area52.afnoapps.usaf.mil")){
-        return d;
-    }
+    //if(shExpMatch(host, "*.area52.afnoapps.usaf.mil")){
+    //    return "DIRECT";
+    //}
     for(i = 0; i < bypassProxyTLDs.length; i++){
         if(shExpMatch(host, bypassProxyTLDs[i])){
-            return d;
+            return "DIRECT";
         }
     }
     for(i = 0; i < bypassProxyHosts.length; i++){
         if(dnsDomainIs(host, bypassProxyHosts[i])){
-            return d;
+            return "DIRECT";
         }
     }
     try{
