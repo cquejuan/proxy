@@ -35,29 +35,22 @@ const d = 'DIRECT';
 function FindProxyForURL(url, host){
     url = url.toLowerCase();
     host = host.toLowerCase();
-    if(isPlainHostName(host)){
+    if(isPlainHostName(host))
         return d;
-    }
-    if(shExpMatch(hostIP, "131.39.*"){
+    else if(shExpMatch(hostIP, "131.39.*")
         return d;
-    }
-    if(shExpMatch(host, "*.area52.afnoapps.usaf.mil")){
+    else if(shExpMatch(host, "*.area52.afnoapps.usaf.mil"))
         return d;
-    }
-    for(i = 0; i < bypassProxyTLDs.length; i++){
-        if(shExpMatch(host, bypassProxyTLDs[i])){
+    for(i = 0; i < bypassProxyTLDs.length; i++)
+        if(shExpMatch(host, bypassProxyTLDs[i]))
             return d;
-        }
-    }
-    for(i = 0; i < bypassProxyHosts.length; i++){
-        if(dnsDomainIs(host, bypassProxyHosts[i])){
+    for(i = 0; i < bypassProxyHosts.length; i++)
+        if(dnsDomainIs(host, bypassProxyHosts[i]))
             return d;
-        }
-    }
-    try{
+    try
         return proxy;
-    }catch{
+    catch
         alert(`${host} = ${dnsResolve(host)}`)
         alert("Error: Failed to use proxies.")
-    }
+    
 }
