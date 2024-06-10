@@ -40,7 +40,8 @@ function FindProxyForURL(url, host){
     if(shExpMatch(host, "*.area52.afnoapps.usaf.mil")){
         return "DIRECT";
     }
-    isIPV4Addr = /^(\d+.){3}\d+$/;
+    let hostIP;
+    let isIPV4Addr = /^(\d+.){3}\d+$/;
     if(isIPV4Addr.test(host)){
         hostIP = host;
     } else {
@@ -49,7 +50,7 @@ function FindProxyForURL(url, host){
     if(shExpMatch(hostIP, "131.39.*"){
         return "DIRECT";
     }
-    if(hostIP==0){
+    if(hostIP === 0){
         return proxy;
     }
     for(i = 0; i < bypassProxyTLDs.length; i++){
