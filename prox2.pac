@@ -37,10 +37,16 @@ function FindProxyForURL(url, host){
     if(isPlainHostName(host)){
         return "DIRECT";
     }
-    //if(shExpMatch(hostIP, "131.39.*"){
-    //    return "DIRECT";
-    //}
     if(shExpMatch(host, "*.area52.afnoapps.usaf.mil")){
+        return "DIRECT";
+    }
+    isIPV4Addr = /^(\d+.){3}\d+$/;
+    if(isIPV4Addr.test(host)){
+        hostIP = host;
+    } else {
+        hostIP = dnsResolve(host);
+    }    
+    if(shExpMatch(hostIP, "131.39.*"){
         return "DIRECT";
     }
     for(i = 0; i < bypassProxyTLDs.length; i++){
