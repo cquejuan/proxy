@@ -31,26 +31,38 @@ const bypassProxyTLDs = [
     "*.gov",
     "*.mil"
 ]
-const d = 'DIRECT';
 function FindProxyForURL(url, host){
     url = url.toLowerCase();
     host = host.toLowerCase();
-    if(isPlainHostName(host))
-        return d;
-    else if(shExpMatch(hostIP, "131.39.*")
-        return d;
-    else if(shExpMatch(host, "*.area52.afnoapps.usaf.mil"))
-        return d;
-    for(i = 0; i < bypassProxyTLDs.length; i++)
-        if(shExpMatch(host, bypassProxyTLDs[i]))
-            return d;
-    for(i = 0; i < bypassProxyHosts.length; i++)
-        if(dnsDomainIs(host, bypassProxyHosts[i]))
-            return d;
-    try
+    if(isPlainHostName(host)){
+        return "DIRECT";
+        alert('true plain')
+    }
+    if(shExpMatch(hostIP, "131.39.*"){
+        return "DIRECT";
+        alert('true ip')
+    }
+    if(shExpMatch(host, "*.area52.afnoapps.usaf.mil")){
+        return "DIRECT";
+        alert('true host')
+    }
+    for(i = 0; i < bypassProxyTLDs.length; i++){
+        if(shExpMatch(host, bypassProxyTLDs[i])){
+            return "DIRECT";
+            alert('true tld')
+        }
+    }
+    for(i = 0; i < bypassProxyHosts.length; i++){
+        if(dnsDomainIs(host, bypassProxyHosts[i])){
+            return "DIRECT";
+            alert('true bypasshost')
+        }
+    }
+    try{
+        alert('use proxy else')
         return proxy;
-    catch
+    }catch{
         alert(`${host} = ${dnsResolve(host)}`)
         alert("Error: Failed to use proxies.")
-    
+    }
 }
