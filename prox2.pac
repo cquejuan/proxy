@@ -4,8 +4,15 @@ Refer to:
     https://learn.microsoft.com/en-us/troubleshoot/developer/browsers/connectivity-navigation/optimize-pac-performance
     https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file
 */
-const proxy = 'PROXY proxy2-1814417d1bc33df81c12bc1f70b3bde3.menlosecurity.com:443; PROXY proxy3-1814417d1bc33df81c12bc1f70b3bde3.menlosecurity.com:443; DIRECT';
-//Add hosts to bypass proxy.
+
+// Proxy server configuration
+const proxy = [
+    'PROXY proxy2-1814417d1bc33df81c12bc1f70b3bde3.menlosecurity.com:443',
+    'PROXY proxy3-1814417d1bc33df81c12bc1f70b3bde3.menlosecurity.com:443',
+    'DIRECT'
+];
+
+// Add hosts to bypass proxy
 const bypassProxyHosts = [
     "menlosecurity.com",
     "microsoft.com",
@@ -24,49 +31,68 @@ const bypassProxyHosts = [
     "office365.us", // excel.dod.online.office365.us
     "spotify.com",
     "usaa.com",
-    "wgu.edu",
+    "wgu.edu"
 ];
+
+// Add top-level domains (TLDs) to bypass proxy
 const bypassProxyTLDs = [
     "*.edu",
     "*.gov",
     "*.mil"
-]
-function FindProxyForURL(url, host){
+];
+
+// Function to find the proxy for a given URL
+function FindProxyForURL(url, host) {
     url = url.toLowerCase();
     host = host.toLowerCase();
-    if(isPlainHostName(host)){
+
+    // If host is a plain hostname, use DIRECT
+    if (isPlainHostName(host)) {
         return "DIRECT";
     }
-    if(shExpMatch(host, "*.area52.afnoapps.usaf.mil")){
+
+    // If the host matches a specific pattern, use DIRECT
+    if (shExpMatch(host, "*.area52.afnoapps.usaf.mil")) {
         return "DIRECT";
     }
-    let hostIP;
-    let isIPV4Addr = /^(\d+.){3}\d+$/;
-    if(isIPV4Addr.test(host)){
+
+    // Resolve hostname to IP address
+    let hostIP = dnsResolve(host);
+    if (!hostIP) {
         hostIP = host;
-    } else {
-        hostIP = dnsResolve(host);
-    }    
-    if(shExpMatch(hostIP, "131.39.*")){
+    }
+
+    // If the IP address falls within a specific range, use DIRECT
+    if (shExpMatch(hostIP, "131.39.*")) {
         return "DIRECT";
     }
-    if(hostIP === 0){
+
+    // If the host is an IP address and not resolvable, use proxy
+    if (!hostIP) {
         return proxy;
     }
-    for(i = 0; i < bypassProxyTLDs.length; i++){
-        if(shExpMatch(host, bypassProxyTLDs[i])){
+
+    // Check if the host matches a bypass host
+    for (let i = 0; i < bypassProxyHosts.length; i++) {
+        if (dnsDomainIs(host, bypassProxyHosts[i])) {
             return "DIRECT";
         }
     }
-    for(i = 0; i < bypassProxyHosts.length; i++){
-        if(dnsDomainIs(host, bypassProxyHosts[i])){
+
+    // Check if the host matches a bypass TLD
+    for (let i = 0; i < bypassProxyTLDs.length; i++) {
+        if (shExpMatch(host, bypassProxyTLDs[i])) {
             return "DIRECT";
         }
     }
-    try{
-        return proxy;
-    }catch{
-        alert(`${host} = ${dnsResolve(host)}`)
-        alert("Error: Failed to use proxies.")
-    }
+
+    // Return proxy configuration
+    return proxy;
+}
+
+// Error handling code
+try {
+    FindProxyForURL();
+} catch (error) {
+    alert(`Error: Failed to use proxies. ${error.message}`);
 }
