@@ -11,6 +11,7 @@ const bypassList = [
     "*.gov",
     "*.mil",
     "airforce.com",
+    "amazon.com",
     "menlosecurity.com",
     "microsoft.com",
     "apple.com",
