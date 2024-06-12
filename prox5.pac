@@ -39,9 +39,6 @@ const bypassList = [
     "windows.net"
 ];
 ///area52.afnoapps.usaf.mil
-const bypassProxyTLDs = [
-
-]
 function FindProxyForURL(url, host){
     url = url.toLowerCase();
     host = host.toLowerCase();
