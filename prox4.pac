@@ -1,3 +1,4 @@
+const proxy = 'PROXY proxy2-1814417d1bc33df81c12bc1f70b3bde3.menlosecurity.com:443; PROXY proxy3-1814417d1bc33df81c12bc1f70b3bde3.menlosecurity.com:443; DIRECT';
 const RegexArray = [
   /google\.com$/,
   /(windowsupdate|update|delivery\.mp)\.microsoft\.com$/,
@@ -63,5 +64,5 @@ function FindProxyForURL(url, host) {
     }
 
     // If the host doesn't match any of the domain patterns, return a proxy server
-    const proxy = 'PROXY proxy2-1814417d1bc33df81c12bc1f70b3bde3.menlosecurity.com:443; PROXY proxy3-1814417d1bc33df81c12bc1f70b3bde3.menlosecurity.com:443; DIRECT';
+    return proxy
 }
