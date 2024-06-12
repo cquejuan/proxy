@@ -52,7 +52,7 @@ function FindProxyForURL(url, host) {
     }
 
     // If the host matches a specific pattern, use DIRECT
-    if (shExpMatch(host, "*\.area52\.afnoapps\.usaf\.mil")) {
+    if (shExpMatch(host, "*.area52.afnoapps.usaf.mil")) {
         return "DIRECT";
     }
 
