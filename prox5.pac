@@ -50,7 +50,7 @@ function FindProxyForURL(url, host){
             return "DIRECT";
         }
     }
-    if(isInNet(host, "131.39.*", "255.255.255.255"){
+    if(isInNet(host, "131.39.*", "255.255.255.0"){
         return "DIRECT";
     }
     try{
