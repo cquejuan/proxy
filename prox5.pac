@@ -33,6 +33,7 @@ const bypassList = [
     "msecnd.net",
     "msft.net",
     "office365.us", // excel.dod.online.office365.us
+    "office365-net.us",
     "office.net",
     "spotify.com",
     "usaa.com",
@@ -48,6 +49,7 @@ function FindProxyForURL(url, host){
     }
     for(i = 0; i < bypassList.length; i++){
         if(shExpMatch(host, bypassList[i])){
+            alert(host + bypassList[i])
             return "DIRECT";
         }
     }
