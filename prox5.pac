@@ -356,16 +356,6 @@ const wl =  [
         "x": [
             "*"
         ],
-        "y": "af",
-        "z": [
-            "edu",
-            "mil"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
         "y": "afcbmplus",
         "z": [
             "com"
@@ -405,15 +395,6 @@ const wl =  [
         "y": "afge916",
         "z": [
             "org"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
-        "y": "afit",
-        "z": [
-            "edu"
         ]
     },
     {
@@ -897,15 +878,6 @@ const wl =  [
         "x": [
             "*"
         ],
-        "y": "apps",
-        "z": [
-            "mil"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
         "y": "appsplatform",
         "z": [
             "us"
@@ -927,15 +899,6 @@ const wl =  [
         "y": "aptrinsic",
         "z": [
             "com"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
-        "y": "apus",
-        "z": [
-            "edu"
         ]
     },
     {
@@ -972,15 +935,6 @@ const wl =  [
         "y": "arincdirect",
         "z": [
             "com"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
-        "y": "arizona",
-        "z": [
-            "edu"
         ]
     },
     {
@@ -1026,15 +980,6 @@ const wl =  [
         "y": "aspnetcdn",
         "z": [
             "com"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
-        "y": "asu",
-        "z": [
-            "edu"
         ]
     },
     {
@@ -1607,15 +1552,6 @@ const wl =  [
         "x": [
             "*"
         ],
-        "y": "byui",
-        "z": [
-            "edu"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
         "y": "c-130jjug",
         "z": [
             "com"
@@ -1745,15 +1681,6 @@ const wl =  [
         "y": "cdn-apple",
         "z": [
             "com"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
-        "y": "cdse",
-        "z": [
-            "edu"
         ]
     },
     {
@@ -2003,27 +1930,9 @@ const wl =  [
         "x": [
             "*"
         ],
-        "y": "coloradotech",
-        "z": [
-            "edu"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
         "y": "colsa",
         "z": [
             "com"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
-        "y": "columbiasouthern",
-        "z": [
-            "edu"
         ]
     },
     {
@@ -2219,24 +2128,6 @@ const wl =  [
         "x": [
             "*"
         ],
-        "y": "dau",
-        "z": [
-            "edu"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
-        "y": "dcita",
-        "z": [
-            "edu"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
         "y": "dcscorp",
         "z": [
             "com"
@@ -2411,15 +2302,6 @@ const wl =  [
         "y": "domaintools",
         "z": [
             "com"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
-        "y": "dps",
-        "z": [
-            "mil"
         ]
     },
     {
@@ -2625,15 +2507,6 @@ const wl =  [
         "x": [
             "*"
         ],
-        "y": "erau",
-        "z": [
-            "edu"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
         "y": "esri",
         "z": [
             "com"
@@ -2734,6 +2607,15 @@ const wl =  [
             "*"
         ],
         "y": "f5",
+        "z": [
+            "com"
+        ]
+    },
+    {
+        "x": [
+            "*"
+        ],
+        "y": "facebook",
         "z": [
             "com"
         ]
@@ -2931,15 +2813,6 @@ const wl =  [
         "x": [
             "*"
         ],
-        "y": "gatech",
-        "z": [
-            "edu"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
         "y": "gccs-j",
         "z": [
             "com"
@@ -3006,6 +2879,16 @@ const wl =  [
         "y": "ggpht",
         "z": [
             "com"
+        ]
+    },
+    {
+        "x": [
+            "*"
+        ],
+        "y": "github",
+        "z": [
+            "com",
+            "io"
         ]
     },
     {
@@ -3499,15 +3382,6 @@ const wl =  [
         "x": [
             "*"
         ],
-        "y": "iastate",
-        "z": [
-            "edu"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
         "y": "ibm",
         "z": [
             "com"
@@ -3700,15 +3574,6 @@ const wl =  [
         "y": "jhana",
         "z": [
             "com"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
-        "y": "jhuapl",
-        "z": [
-            "edu"
         ]
     },
     {
@@ -4410,9 +4275,9 @@ const wl =  [
         "x": [
             "*"
         ],
-        "y": "mga",
+        "y": "mfdonut",
         "z": [
-            "edu"
+            "com"
         ]
     },
     {
@@ -4533,15 +4398,6 @@ const wl =  [
         "y": "mimecast",
         "z": [
             "com"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
-        "y": "mit",
-        "z": [
-            "edu"
         ]
     },
     {
@@ -4922,15 +4778,6 @@ const wl =  [
         "x": [
             "*"
         ],
-        "y": "nau",
-        "z": [
-            "edu"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
         "y": "navyfederal",
         "z": [
             "org"
@@ -5062,15 +4909,6 @@ const wl =  [
         "y": "njevitytogo",
         "z": [
             "com"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
-        "y": "nmt",
-        "z": [
-            "edu"
         ]
     },
     {
@@ -5793,15 +5631,6 @@ const wl =  [
         "x": [
             "*"
         ],
-        "y": "psu",
-        "z": [
-            "edu"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
         "y": "pttportal",
         "z": [
             "com",
@@ -6470,15 +6299,6 @@ const wl =  [
         "x": [
             "*"
         ],
-        "y": "siu",
-        "z": [
-            "edu"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
         "y": "skillport",
         "z": [
             "com"
@@ -6706,15 +6526,6 @@ const wl =  [
         "x": [
             "*"
         ],
-        "y": "strayer",
-        "z": [
-            "edu"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
         "y": "studentclearinghouse",
         "z": [
             "org"
@@ -6871,15 +6682,6 @@ const wl =  [
         "y": "tactics-training",
         "z": [
             "com"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
-        "y": "tamu",
-        "z": [
-            "edu"
         ]
     },
     {
@@ -7265,24 +7067,6 @@ const wl =  [
         "x": [
             "*"
         ],
-        "y": "uagc",
-        "z": [
-            "edu"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
-        "y": "udayton",
-        "z": [
-            "edu"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
         "y": "udemy",
         "z": [
             "com"
@@ -7295,15 +7079,6 @@ const wl =  [
         "y": "udemycdn",
         "z": [
             "com"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
-        "y": "ufl",
-        "z": [
-            "edu"
         ]
     },
     {
@@ -7403,15 +7178,6 @@ const wl =  [
         "y": "updatenode",
         "z": [
             "com"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
-        "y": "usafa",
-        "z": [
-            "edu"
         ]
     },
     {
@@ -7520,15 +7286,6 @@ const wl =  [
         "y": "utc",
         "z": [
             "com"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
-        "y": "utexas",
-        "z": [
-            "edu"
         ]
     },
     {
@@ -7869,15 +7626,6 @@ const wl =  [
         "x": [
             "*"
         ],
-        "y": "wgu",
-        "z": [
-            "edu"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
         "y": "whatsapp",
         "z": [
             "com"
@@ -7971,15 +7719,6 @@ const wl =  [
         "x": [
             "*"
         ],
-        "y": "wisc",
-        "z": [
-            "edu"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
         "y": "withgoogle",
         "z": [
             "com"
@@ -8010,15 +7749,6 @@ const wl =  [
         "y": "wordhippo",
         "z": [
             "com"
-        ]
-    },
-    {
-        "x": [
-            "*"
-        ],
-        "y": "wright",
-        "z": [
-            "edu"
         ]
     },
     {
@@ -8207,9 +7937,9 @@ function FindProxyForURL(url, host) {
     if(hostIP==0)
         return proxy;
 
-    //if(shExpMatch(hostIP, "181.39.*"))
-    //    console.log(hostIP)
-    //    return direct;
+    if(shExpMatch(hostIP, "181.39.*"))
+        console.log(hostIP)
+        return direct;
     console.log(hostIP)
     console.log(host)
     for(i = 0; i < wl.length; i++)
