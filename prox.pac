@@ -2,13 +2,7 @@
 // Microsoft Doc: https://learn.microsoft.com/en-us/troubleshoot/developer/browsers/connectivity-navigation/optimize-pac-performance
 /*
 Optimized proxy script by CqueJuan I. Leon Guerrero
-Assisted revisions by NIPRGPT.
-
-Original Proxy Vs Modified:
-    -Uses binary search to search speed
-    -Added all links from the original Menlosecurity script.
-    -NIPRGPT used as reference for optimization
-
+Assisted revisions by NIPRGPT
 Reference guides:
     https://learn.microsoft.com/en-us/troubleshoot/developer/browsers/connectivity-navigation/optimize-pac-performance
     https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file
@@ -5875,6 +5869,15 @@ const whitelist =  [
             "*"
         ],
         "y": "recordedfuture",
+        "z": [
+            "com"
+        ]
+    },
+    {
+        "x": [
+            "*"
+        ],
+        "y": "reddit",
         "z": [
             "com"
         ]
