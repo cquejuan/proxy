@@ -30,7 +30,6 @@ function FindProxyForURL(url, host) {
     if(hostIP==0)
         return proxy;
 
-
     index = binarySearch(whitelist, SLD)
     if(index !== -1){
         item = whitelist[index]
@@ -62,7 +61,7 @@ function binarySearch(arr, target) {
         const mid = Math.floor((left + right) / 2);
         const guess = arr[mid].y;
         
-        if (guess === target) {
+        if (guess === target || guess === "*" || guess === "") {
         return mid;
         }
 
