@@ -30,6 +30,11 @@ function FindProxyForURL(url, host) {
     if(hostIP==0)
         return proxy;
 
+    for(i = 0; i < whitelistTld.length; i++){
+        if(TLD == whitelistTld[i]){
+            return direct
+        }
+    }
     index = binarySearch(whitelist, SLD)
     if(index !== -1){
         item = whitelist[index]
@@ -61,7 +66,7 @@ function binarySearch(arr, target) {
         const mid = Math.floor((left + right) / 2);
         const guess = arr[mid].y;
         
-        if (guess === target || guess === "*" || guess === "") {
+        if (guess === target) {
         return mid;
         }
 
@@ -78,18 +83,12 @@ function binarySearch(arr, target) {
 
 const proxy = 'PROXY proxy2-1814417d1bc33df81c12bc1f70b3bde3.menlosecurity.com:443; PROXY proxy3-1814417d1bc33df81c12bc1f70b3bde3.menlosecurity.com:443;';
 const direct = "DIRECT";
+const whitelistTld = [
+    "gov",
+    "mil",
+    "edu"
+]
 const whitelist =  [
-    {
-        "x": [
-            "*"
-        ],
-        "y": "",
-        "z": [
-            "gov",
-            "mil",
-            "edu"
-        ]
-    },
     {
         "x": [
             "*"
