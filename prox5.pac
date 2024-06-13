@@ -3,6 +3,9 @@
 
 const proxy = 'PROXY proxy2-1814417d1bc33df81c12bc1f70b3bde3.menlosecurity.com:443; PROXY proxy3-1814417d1bc33df81c12bc1f70b3bde3.menlosecurity.com:443;';
 const direct = "DIRECT";
+const whitelist = [
+
+];
 const wl =  [
     {
         "x": [
@@ -7934,9 +7937,9 @@ function FindProxyForURL(url, host) {
     if(hostIP==0)
         return proxy;
 
-    if(shExpMatch(hostIP, "181.39.*"))
-        console.log(hostIP)
-        return direct;
+    //if(shExpMatch(hostIP, "181.39.*"))
+    //    return direct;
+
     console.log(hostIP)
     console.log(host)
     for(i = 0; i < wl.length; i++)
