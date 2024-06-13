@@ -3,9 +3,6 @@
 
 const proxy = 'PROXY proxy2-1814417d1bc33df81c12bc1f70b3bde3.menlosecurity.com:443; PROXY proxy3-1814417d1bc33df81c12bc1f70b3bde3.menlosecurity.com:443;';
 const direct = "DIRECT";
-const whitelist = [
-
-];
 const wl =  [
     {
         "x": [
