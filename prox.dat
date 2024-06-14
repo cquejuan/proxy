@@ -718,6 +718,15 @@ const whitelist =  [
         "x": [
             "*"
         ],
+        "y": "ally",
+        "z": [
+            "com"
+        ]
+    },
+    {
+        "x": [
+            "*"
+        ],
         "y": "alohaenterprise",
         "z": [
             "com"
