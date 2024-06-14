@@ -22,8 +22,8 @@ function FindProxyForURL(url, host) {
         return direct;
     }
 
-    const hostIP;
-    const isIpV4Addr = /^(\d+.){3}\d+$/;
+    let hostIP;
+    let isIpV4Addr = /^(\d+.){3}\d+$/;
 
     if (isIpV4Addr.test(host))
         hostIP = host;
@@ -8018,7 +8018,7 @@ function searchWhitelistDB(SUB, SLD, TLD){
             for(j = 0; j < item.z.length; j++){
                 if(item.z[j] == TLD){
                     for(k = 0; item.x.length; k++){
-                        if(itm.x[k] == "*" || itm.x[k] == "" || itm.x[k] == SUB){
+                        if(item.x[k] == "*" || item.x[k] == "" || item.x[k] == SUB){
                             return true
                         }
                     }
