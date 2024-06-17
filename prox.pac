@@ -1449,6 +1449,15 @@ function searchWhitelistDB(SUB, SLD, TLD){
             "x": [
                 "*"
             ],
+            "y": "bluebeam",
+            "z": [
+                "com"
+            ]
+        },
+        {
+            "x": [
+                "*"
+            ],
             "y": "bluejeans",
             "z": [
                 "com"
@@ -2100,15 +2109,6 @@ function searchWhitelistDB(SUB, SLD, TLD){
                 "*"
             ],
             "y": "cosocloud",
-            "z": [
-                "com"
-            ]
-        },
-        {
-            "x": [
-                "*"
-            ],
-            "y": "costco",
             "z": [
                 "com"
             ]
