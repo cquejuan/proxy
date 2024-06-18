@@ -1,14 +1,3 @@
-// Mozilla Doc: https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file#domain
-// Microsoft Doc: https://learn.microsoft.com/en-us/troubleshoot/developer/browsers/connectivity-navigation/optimize-pac-performance
-/*
-Optimized proxy script by CqueJuan I. Leon Guerrero
-Assisted revisions by NIPRGPT
-Reference guides:
-    https://learn.microsoft.com/en-us/troubleshoot/developer/browsers/connectivity-navigation/optimize-pac-performance
-    https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file
-*/
-
-
 function FindProxyForURL(url, host) {
     const proxy = 'PROXY proxy2-1814417d1bc33df81c12bc1f70b3bde3.menlosecurity.com:443; PROXY proxy3-1814417d1bc33df81c12bc1f70b3bde3.menlosecurity.com:443;';
     const direct = "DIRECT";
@@ -2117,6 +2106,15 @@ function searchWhitelistDB(SUB, SLD, TLD){
             "x": [
                 "*"
             ],
+            "y": "costco",
+            "z": [
+                "com"
+            ]
+        },
+        {
+            "x": [
+                "*"
+            ],
             "y": "costpointfoundations",
             "z": [
                 "com"
@@ -2163,6 +2161,15 @@ function searchWhitelistDB(SUB, SLD, TLD){
                 "*"
             ],
             "y": "cti-crm",
+            "z": [
+                "com"
+            ]
+        },
+        {
+            "x": [
+                "*"
+            ],
+            "y": "cults3d",
             "z": [
                 "com"
             ]
@@ -6360,6 +6367,15 @@ function searchWhitelistDB(SUB, SLD, TLD){
             "x": [
                 "*"
             ],
+            "y": "shopmyexchange",
+            "z": [
+                "com"
+            ]
+        },
+        {
+            "x": [
+                "*"
+            ],
             "y": "siemens",
             "z": [
                 "com"
@@ -8045,5 +8061,4 @@ function searchWhitelistDB(SUB, SLD, TLD){
         }
     }
 }
-
 
