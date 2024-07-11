@@ -2061,6 +2061,16 @@ function searchWhitelistDB(SUB, SLD, TLD){
             "x": [
                 "*"
             ],
+            "y": "comptia",
+            "z": [
+                "com",
+                "org"
+            ]
+        },
+        {
+            "x": [
+                "*"
+            ],
             "y": "concursolutions",
             "z": [
                 "com"
