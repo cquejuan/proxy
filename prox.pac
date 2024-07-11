@@ -5527,6 +5527,15 @@ function searchWhitelistDB(SUB, SLD, TLD){
             "x": [
                 "*"
             ],
+            "y": "pelican",
+            "z": [
+                "com"
+            ]
+        },
+        {
+            "x": [
+                "*"
+            ],
             "y": "percipio",
             "z": [
                 "com"
