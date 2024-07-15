@@ -678,6 +678,15 @@ function searchWhitelistDB(SUB, SLD, TLD){
             "x": [
                 "*"
             ],
+            "y": "alaskaair",
+            "z": [
+                "com"
+            ]
+        },
+        {
+            "x": [
+                "*"
+            ],
             "y": "alienvault",
             "z": [
                 "com"
